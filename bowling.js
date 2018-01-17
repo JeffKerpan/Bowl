@@ -1,6 +1,6 @@
 const getRollsFromArgv = require('./getRollsFromArgv');
 const getFramesFromRolls = require('./getFramesFromRolls');
-const finalScore = require('./finalScore');
+const getFinalScore = require('./getFinalScore');
 
 const main = () => {
   const rolls = getRollsFromArgv()
@@ -10,7 +10,7 @@ const main = () => {
   const frames = getFramesFromRolls(rolls)
   console.log('frames: ', frames);
 
-  const total = finalScore(rolls); // including bonuses
+  const total = getFinalScore(rolls); // including bonuses
   console.log('FINAL SCORE: ', total);
   // console.log('rollsArray: ', rollsArray);
 
