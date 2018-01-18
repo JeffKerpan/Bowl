@@ -60,24 +60,25 @@ http://bowlingballgalaxy.com/how-to-keep-score-in-bowling/Sample1game.bmp 'bowli
 * node bowling.js 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 log should populate in the console
-
 #### FINAL SCORE: 0
 
 The above is an example of an entire game rolled of zeros.
 I have it set up to input an entire game into the command line.
 
+
 * node bowling.js 10 10 10 10 10 10 10 10 10 10 10 10
 
 log should populate in the console
-
 #### FINAL SCORE: 300
 
 This is an example of an entrie game rolled of strikes.
+
 
 * node bowling.js 10 3 1 10 10 10 10 10 10 10 10 10 10
 
 log should populate in the console
 #### FINAL SCORE: 258
+
 
 ## TESTING:
 
@@ -87,4 +88,4 @@ Type into the Command Line:
 
 * npm run test
 
-I tried to come up with plenty of examples for the tests. 
+I tried to come up with plenty of examples for the tests.
