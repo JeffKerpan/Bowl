@@ -28,6 +28,18 @@ describe('Final Score', () => {
     expect(getFinalScore(rolls)).to.deep.equal(258);
   });
 
+  it('Should get final score from full game with a Strike in the 8th frame', () => {
+    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 10, 10, 10];
+
+    expect(getFinalScore(rolls)).to.deep.equal(40);
+  });
+
+  it('Should get final score from full game with a Strike in the 9th frame', () => {
+    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10, 10];
+
+    expect(getFinalScore(rolls)).to.deep.equal(60);
+  });
+
   it('Should get final score from full game with a Spare', () => {
     let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 1, 1, 0];
 
@@ -38,6 +50,18 @@ describe('Final Score', () => {
     let rolls = [9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9];
 
     expect(getFinalScore(rolls)).to.deep.equal(190);
-  })
+  });
+
+  it('Should get final score from perfect game', () => {
+    let rolls = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+
+    expect(getFinalScore(rolls)).to.deep.equal(300);
+  });
+
+  it('Should get final score from full game with bonus rolls in 10th frame', () => {
+    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 2, 3];
+
+    expect(getFinalScore(rolls)).to.deep.equal(15);
+  });
 
 });
