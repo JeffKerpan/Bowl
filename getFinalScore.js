@@ -1,4 +1,5 @@
 //*** Without const it will get total score with npm run bowling2.js
+
 const getFinalScore = (rolls) => {
   var frame = 1;
 
