@@ -16,5 +16,11 @@ describe('Final Score', () => {
     expect(getFinalScore(rolls)).to.deep.equal(0);
   });
 
+  it('Should get a final score from a full game with a Strike', () => {
+    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 1, 0];
+
+    expect(getFinalScore(rolls)).to.deep.equal(12);
+  });
+
 
 });
