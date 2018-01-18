@@ -1,36 +1,36 @@
-//*** Without const it will get total score with npm run bowling2.js
-
 const getFinalScore = (rolls) => {
   var frame = 1;
 
+  // Using reduce to add up the frame scores
   return rolls.reduce((previous, current, i, array) => {
     // Bonus rolls
     if(frame >= 10)
       return previous + current;
 
-    // Strike
+    // Current roll is a Strike then add the previous roll and current roll plus the next two rolls for the bonus
      if(current === 10) {
         frame++;
         return previous + current + array[i + 1] + array[i + 2];
     }
 
-      // Second Roll of a Frame
+      // 2nd roll of a Frame and then go to the next frame
       if(frame % 1 !== 0) {
         frame = Math.floor(++frame);
 
-      // SPARE
+      // Current roll is a Spare adding the previous roll, current roll and next roll for the bonus
         if(current + array[i - 1] === 10)
           return previous + current + array[i + 1];
-          // NOT A SPARE
+
+        // Current roll not a Spare adding previous roll and the current roll
         return previous + current;
 
       }
-      // 1ST ROLL OF A FRAME
+
+      // 1ST roll of a frame will increment frame to account for second roll of a frame if needed
         frame += .5;
         // console.log('rolls', array);
         return previous + current;
   }, 0);
-}
-// finalScore();
+};
 
 module.exports = getFinalScore;
