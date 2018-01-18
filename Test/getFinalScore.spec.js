@@ -34,5 +34,10 @@ describe('Final Score', () => {
     expect(getFinalScore(rolls)).to.deep.equal(12);
   });
 
+  it('Should get final score from full game with all Spares', () => {
+    let rolls = [9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9, 1, 9];
+
+    expect(getFinalScore(rolls)).to.deep.equal(190);
+  })
 
 });
