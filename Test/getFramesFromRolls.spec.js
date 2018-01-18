@@ -34,4 +34,10 @@ describe('Converts Frames to Rolls', () => {
     expect(getFramesFromRolls(rolls)).to.deep.equal([[10, 0], [3, 1], [9, 1], [1, 3], [10, 0], [9, 1]]);
   });
 
+  it('Should get frames from rolls with bonus rolls', () => {
+    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 1, 1];
+
+    expect(getFramesFromRolls(rolls)).to.deep.equal([[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [10, 0], [1, 1]]);
+  });
+
 });
