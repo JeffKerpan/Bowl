@@ -12,7 +12,9 @@ const main = () => {
   console.log('frames: ', frames);
 
   const total = getFinalScore(rolls);
-  console.log('FINAL SCORE: ', total);
+    // if(frame >= 11)
+      console.log('FINAL SCORE: ', total);
+      
   // console.log('rollsArray: ', rollsArray);
 
   // console.log('totalScore: ', totalScore)

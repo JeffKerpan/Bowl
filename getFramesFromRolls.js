@@ -15,7 +15,7 @@ const getFramesFromRolls = (rollsArray) => {
       const frame = rollsArray.slice(i, i + 2);
 
       // If the current index plus the next index add to greater than 10 it will throw an error
-      if(frame[0] + frame[1] > 10){
+      if(frame[0] + frame[1] > 10) {
         throw "ERROR: A frame has more than 10 pins down " + frame[0] + '+' + frame[1];
 
         // If the frames array has more than 10 non-bonus frames then it will throw an error
