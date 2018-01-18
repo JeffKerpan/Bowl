@@ -16,4 +16,10 @@ describe('Converts Frames to Rolls', () => {
     expect(getFramesFromRolls(rolls)).to.deep.equal([[0, 0], [0, 0]]);
   });
 
+  it('Should get frames from rolls with a Strike', () => {
+    let rolls = [1, 5, 6, 2, 10];
+
+    expect(getFramesFromRolls(rolls)).to.deep.equal([[1, 5], [6, 2], [10, 0]]);
+  });
+
 });
