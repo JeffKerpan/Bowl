@@ -9,4 +9,11 @@ describe('Converts Frames to Rolls', () => {
 
     expect(getFramesFromRolls(rolls)).to.deep.equal([[1, 5], [6, 2]]);
   });
+
+  it('Should get frames from rolls with Gutter Balls', () => {
+    let rolls = [0, 0, 0, 0];
+
+    expect(getFramesFromRolls(rolls)).to.deep.equal([[0, 0], [0, 0]]);
+  });
+
 });
