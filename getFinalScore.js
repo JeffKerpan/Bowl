@@ -1,11 +1,11 @@
 //*** Without const it will get total score with npm run bowling2.js
-let getFinalScore = (rolls) => {
+const getFinalScore = (rolls) => {
   var frame = 1;
 
   return rolls.reduce((previous, current, i, array) => {
     // Bonus rolls
     if(frame >= 10)
-    return previous + current;
+      return previous + current;
 
     // Strike
      if(current === 10) {
@@ -21,7 +21,7 @@ let getFinalScore = (rolls) => {
         if(current + array[i - 1] === 10)
           return previous + current + array[i + 1];
           // NOT A SPARE
-          return previous + current;
+        return previous + current;
 
       }
       // 1ST ROLL OF A FRAME
@@ -31,6 +31,5 @@ let getFinalScore = (rolls) => {
   }, 0);
 }
 // finalScore();
-
 
 module.exports = getFinalScore;

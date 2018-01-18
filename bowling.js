@@ -10,11 +10,10 @@ const main = () => {
   const frames = getFramesFromRolls(rolls)
   console.log('frames: ', frames);
 
-  const total = getFinalScore(rolls); // including bonuses
+  const total = getFinalScore(rolls);
   console.log('FINAL SCORE: ', total);
   // console.log('rollsArray: ', rollsArray);
 
-  // const totalScore = frameScores.reduce( (item, total, 0) => { return total + item })
   // console.log('totalScore: ', totalScore)
 };
 
