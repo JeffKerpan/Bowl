@@ -22,4 +22,10 @@ describe('Converts Frames to Rolls', () => {
     expect(getFramesFromRolls(rolls)).to.deep.equal([[1, 5], [6, 2], [10, 0]]);
   });
 
+  it('Should get frames from rolls with a Spare', () => {
+    let rolls = [1, 5, 6, 2, 9, 1];
+
+    expect(getFramesFromRolls(rolls)).to.deep.equal([[1, 5], [6, 2], [9, 1]]);
+  })
+
 });
