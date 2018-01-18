@@ -41,9 +41,9 @@ describe('Final Score', () => {
   });
 
   it('Should get final score from full game with strikes in the 8th and 9th frames', () => {
-    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10, 10, 10];
+    let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 0, 0];
 
-    expect(getFinalScore(rolls)).to.deep.equal(90);
+    expect(getFinalScore(rolls)).to.deep.equal(30);
   });
 
   it('Should get final score from full game with a Spare', () => {
