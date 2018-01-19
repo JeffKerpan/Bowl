@@ -8,7 +8,7 @@ describe('Final Score', () => {
     let rolls = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2];
 
     expect(getFinalScore(rolls)).to.deep.equal(30);
-  })
+  });
 
   it('Should get final score from gutter ball full game', () => {
     let rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

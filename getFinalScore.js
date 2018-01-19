@@ -11,7 +11,6 @@ const getFinalScore = (rolls) => {
     // Current roll is a Strike then add the previous roll and current roll plus the next two rolls(when applicable) for the bonus
      if(current === 10 && array[i + 2] !== undefined) {
         frame++;
-        console.log(array[i + 1], array[i + 2]);
         return previous + current + array[i + 1] + array[i + 2];
     }
 
@@ -19,7 +18,7 @@ const getFinalScore = (rolls) => {
       if(frame % 1 !== 0) {
         frame = Math.floor(++frame);
 
-      // Current roll is a Spare adding the previous roll, current roll and next roll for the bonus
+      // Current roll is a Spare adding the previous roll, current roll and next roll(when applicable) for the bonus
         if(current + array[i - 1] === 10 && array[i + 1] !== undefined)
           return previous + current + array[i + 1];
 

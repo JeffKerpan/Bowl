@@ -80,29 +80,29 @@ log should populate in the console
 #### FINAL SCORE: 258
 
 
-## CURRENT SCORE
+## SCORE
 
-If a partial game is inputed then it will keep track of and log CURRENT SCORE:
+If a partial game is inputed then it will keep track of and log those rolls SCORE:
 
 `node bowling.js 10`
 
 log should populate in the console
-#### FINAL SCORE: 10
+#### SCORE: 10
 
 `node bowling.js 9 1`
 
 log should populate in the console
-#### FINAL SCORE: 10
+#### SCORE: 10
 
 `node bowling.js 1 6 5 2 10`
 
 log should populate in the console
-#### FINAL SCORE: 24
+#### SCORE: 24
 
 `node bowling.js 1 6 10 5 3 9 1 2 0`
 
 log should populate in the console
-#### FINAL SCORE: 47
+#### SCORE: 47
 
 
 ## TESTING:
@@ -113,4 +113,5 @@ Type into the Command Line:
 
 `npm run test`
 
-I tried to come up with plenty of examples for the tests.
+I tried to come up with plenty of examples for the tests as bowling can have so
+many different outcomes depending on what is rolled and when.

@@ -19,7 +19,7 @@ const getFramesFromRolls = (rollsArray) => {
 
         // If the frames array has more than 10 non-bonus frames then it will throw an error
       } else if (framesArray.length > 10) {
-        throw 'ERROR: Please only enter 10 frames plus any applicable bonus rolls';
+        throw 'ERROR: Please only enter 10 frames and any applicable bonus rolls';
       }
       framesArray.push(frame);
       i++;
