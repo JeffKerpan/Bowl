@@ -7,15 +7,15 @@ http://bowlingballgalaxy.com/how-to-keep-score-in-bowling/Sample1game.bmp 'bowli
 
 ## How to install npm packages to the the Game running and Tests to run:
 
-* npm install
+`npm install`
 
-* npm install mocha --save--dev
+`npm install mocha --save--dev`
 
-* npm install chai --save--dev
+`npm install chai --save--dev`
 
-* npm install babel --save--dev
+`npm install babel --save--dev`
 
-* npm install babel-cli --save--dev
+`npm install babel-cli --save--dev`
 
 ## Add to .babelrc file if it is not already present to allow for ES6 functions
 
@@ -55,9 +55,9 @@ http://bowlingballgalaxy.com/how-to-keep-score-in-bowling/Sample1game.bmp 'bowli
 
 ### Type into the Command Line followed by integers:
 
-* node bowling.js
+`node bowling.js`
 
-* node bowling.js 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+`node bowling.js 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0`
 
 log should populate in the console
 #### FINAL SCORE: 0
@@ -66,7 +66,7 @@ The above is an example of an entire game rolled of zeros.
 I have it set up to input an entire game into the command line.
 
 
-* node bowling.js 10 10 10 10 10 10 10 10 10 10 10 10
+`node bowling.js 10 10 10 10 10 10 10 10 10 10 10 10`
 
 log should populate in the console
 #### FINAL SCORE: 300
@@ -74,7 +74,7 @@ log should populate in the console
 This is an example of an entrie game rolled of strikes.
 
 
-* node bowling.js 10 3 1 10 10 10 10 10 10 10 10 10 10
+`node bowling.js 10 3 1 10 10 10 10 10 10 10 10 10 10`
 
 log should populate in the console
 #### FINAL SCORE: 258
@@ -86,6 +86,6 @@ log should populate in the console
 
 Type into the Command Line:
 
-* npm run test
+`npm run test`
 
 I tried to come up with plenty of examples for the tests.
