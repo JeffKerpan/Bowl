@@ -1,7 +1,6 @@
 const getRollsFromArgv = require('./getRollsFromArgv');
 const getFramesFromRolls = require('./getFramesFromRolls');
 const getFinalScore = require('./getFinalScore');
-const displayFinalScore = require('./displayFinalScore');
 
 //One main function to pull in the rolls, frames and final score functions
 const main = () => {

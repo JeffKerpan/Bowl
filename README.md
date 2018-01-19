@@ -79,6 +79,30 @@ This is an example of an entrie game rolled of strikes.
 log should populate in the console
 #### FINAL SCORE: 258
 
+### CURRENT SCORE
+
+If a partial game is inputed then it will keep track of and log CURRENT SCORE:
+
+`node bowling.js 10`
+
+log should populate in the console
+#### FINAL SCORE: 10
+
+`node bowling.js 9 1`
+
+log should populate in the console
+#### FINAL SCORE: 10
+
+`node bowling.js 1 6 5 2 10`
+
+log should populate in the console
+#### FINAL SCORE: 24
+
+`node bowling.js 1 6 10 5 3 9 1 2 0`
+
+log should populate in the console
+#### FINAL SCORE: 47
+
 
 ## TESTING:
 

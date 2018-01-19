@@ -1,6 +1,5 @@
 const getFramesFromRolls = require('../getFramesFromRolls.js');
 
-// const expect = require('chai').expect;
 import { expect } from 'chai';
 
 describe('Converts Frames to Rolls', () => {
