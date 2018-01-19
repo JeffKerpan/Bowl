@@ -8,8 +8,8 @@ const getRollsFromArgv = () => {
     array[index] = number * 1;
   });
 
-// ERROR handling
-// Using map to check if the inputs are numbers and to make sure that the inputs are between 0 and 10
+  // ERROR handling
+  // Using map to check if the inputs are numbers and to make sure that the inputs are between 0 and 10
   rollsArray.map(pinsOneRoll => {
     if(Number.isInteger(pinsOneRoll)) {
       if(pinsOneRoll > 10 || pinsOneRoll < 0) {
