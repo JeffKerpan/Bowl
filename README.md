@@ -79,7 +79,8 @@ This is an example of an entrie game rolled of strikes.
 log should populate in the console
 #### FINAL SCORE: 258
 
-### CURRENT SCORE
+
+## CURRENT SCORE
 
 If a partial game is inputed then it will keep track of and log CURRENT SCORE:
 
